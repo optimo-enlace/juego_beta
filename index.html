@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú del Juego</title>
+    <link rel="stylesheet" href="menu/apariencia.css">
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Juego de Pong</h1>
+        <button class="menu-button" onclick="startGame()">Iniciar Juego</button>
+        <button class="menu-button" onclick="showInstructions()">Instrucciones</button>
+        <button class="menu-button" onclick="showCredits()">Créditos</button>
+    </div>
+    <div class="modal" id="instructionsModal">
+        <div class="modal-content">
+            <h2>Instrucciones</h2>
+            <p>Usa el dedo para mover la paleta y evitar que la bola pase. ¡Anota más puntos que la computadora para ganar!</p>
+            <button class="close-button" onclick="closeModal('instructionsModal')">Cerrar</button>
+        </div>
+    </div>
+    <div class="modal" id="creditsModal">
+        <div class="modal-content">
+            <h2>Créditos</h2>
+            <p>Desarrollado por Dilan_E Gracias por jugar!</p>
+            <button class="close-button" onclick="closeModal('creditsModal')">Cerrar</button>
+        </div>
+    </div>
+    <script src="menu/script.js"></script>
+</body>
+</html>
